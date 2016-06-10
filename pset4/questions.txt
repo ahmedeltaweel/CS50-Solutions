@@ -1,0 +1,29 @@
+0.  BMP: 32 bit color, or over 4 billion
+	GIF: 8 bits, 256 colors
+	JPEG: 24 bit, 16 million
+	PNG: 24 bit, 16 million
+	
+1.  GIF
+2.  Lossy compression throws away some of the data in a file. 
+	Lossless uses an algorithm to compress a file that is reversible, hence, 
+	the quality of the file can move back and forth between the two states.
+	
+3.  JPEG
+4.  Two things happened:
+	* the system modifies the filename’s first character in the file’s directory entry to signal that the file has been deleted and that the directory entry can be recycled.
+	* he system moves all of the file’s FAT clusters to the hard drive’s list of free clusters.
+5.  Provides sufficient sanitization by writing ASCII NUL bytes or ( randome characters ) every address on the disk. 
+6.  stdint.h is a header file in the C standard library introduced in the C99 standard library section 7.18 to allow programmers to write more portable code by providing a set of typedefs that specify exact-width integer types, together with the defined minimum and maximum allowable values for each type, using macros
+7.  It means that you intended to use specific data type in specific way. 
+8.  BYTE is a 1 byte ,DWORD is a 4 bytes, a LONG is a 4 bytes, and a WORD is a 2 bytes.
+9.  A WORD which denotes bfType.
+10. bfSize specifies the size, in bytes, of the bitmap file.
+	biSize specifies the size of the structure in bytes.
+11. the bitmap is a top-down DIB (device-independent bitmap) and its origin is the upper left corner.
+12. The biBitCount member of the BITMAPINFOHEADER structure
+13. As it might not be able to create outfile.
+14. as we are reading one struture. 
+15. The padding would be 3.
+16. Sets the position indicator associated with the stream to a new position.
+17. Constant indecating Current position of the file pointer
+18. Someone who looks suspiciously like David Malan!

@@ -1,0 +1,22 @@
+0.  word with the maximum length
+1.  returns resource usage
+2.  16
+3.  ass getrusage function expects pointer in the second argument of type struct rusage.
+
+4.  In the for loop of main, the program reads characters in one by one. The program checks that the characters are either alphabetical or a apostrophe.
+    If it passes the check, the character is saved in a word buffer. This continues until a non-alphabetical character (such as \n) is read.
+    Afterwhich, the word is null-terminated and spell-checked.
+    If during this process a digit or an excessively long word is read, the entire line is scrapped.
+    
+5.  fscanf() by itself is actually not the best function to use to get input specifically strings.
+    fgetc() reads character-by-character from a stream. 
+    This will enable us to keep track of the number of chars we read, while using fscanf(),
+    on the other hand, might get us into trouble if a longer string than we expect was read.
+    
+6.  As it will not modify the contents of the buffer pointer by their parameters.
+    As a result - it is safe to pass string literal like "Hello" into this function.
+
+7.  trie.
+8.  it was not slow.
+9.  i would make some refactoring.
+10. yes.
